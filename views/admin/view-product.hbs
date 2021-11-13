@@ -1,0 +1,81 @@
+<section class="add-product bg-light">
+    <div class="container">
+        <div class="">
+            <a  href="/admin/add-graphic-works" class="btn btn-success" style="margin-left: 30rem;margin-top:20px;">Add Graphic Works</a>
+        </div>
+        <table class="table mt-5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each images}}
+    <tr>
+      <td>{{this.titel}}</td>
+      <td><img style="width: 50px;height:50px;" src="/works-images/{{this._id}}.jpg"></td>
+      <td class=""> <a href="/admin/edit-images/{{this._id}}" class="btn btn-primary">Edit</a>  </td>
+      <td class=""> <a href="/admin/delet-images/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you want to delete {{this._id}}?')">Delet</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>
+
+
+
+<section class="static bg-light">
+<div class="container">
+  <div class="">
+    <a  href="/admin/add-static-web-works" class="btn btn-success" style="margin-left: 30rem;margin-top:20px;">Add Static Website Works</a>
+  </div>
+  <table class="table mt-5">
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>starticImage</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each staticImages}}
+    <tr>
+      <td>{{this.titel}}</td>
+      <td><img style="width: 50px;height:50px;" src="/works-images/{{this._id}}.jpg"></td>
+      <td class=""> <a href="/admin/edit-static-images/{{this._id}}" class="btn btn-primary">Edit</a>  </td>
+      <td class=""> <a href="/admin/delet-static-images/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you want to delete {{this._id}}?')">Delet</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</section>
+
+
+<section class="dainamic bg-light">
+<div class="container">
+  <div class="">
+      
+              <a  href="/admin/add-dainamic-web-works" class="btn btn-success" style="margin-left: 30rem;margin-top:20px;">Add Dainamic Website Works</a>
+  </div>
+  <table class="table mt-5">
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>dainamicImage</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each dainamicImages}}
+    <tr>
+      <td>{{this.titel}}</td>
+      <td><img style="width: 50px;height:50px;" src="/works-images/{{this._id}}.jpg"></td>
+      <td class=""> <a href="/admin/edit-static-images/{{this._id}}" class="btn btn-primary">Edit</a>  </td>
+      <td class=""> <a href="/admin/delet-dainamic-images/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you want to delete {{this._id}}?')">Delet</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</section>

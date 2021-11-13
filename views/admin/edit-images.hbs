@@ -1,0 +1,26 @@
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">EDIT IMAGES</h2>
+
+                <form action="/admin/edit-images/{{images._id}}" method="POST" enctype="multipart/form-data" class="">
+                   <label for="" class="">Titel</label>
+                    <input type="text" name="titel" class="form-control" value="{{images.titel}}">
+
+                     <label for="" class="">Image</label>
+
+                     <img src="/works-images/{{images._id}}.jpg" alt="" style="width: 100px;height:100px;padding:10px;" id="imageView">
+                    <input type="file" name="image" class="form-control" onchange="viewImage(event)">
+
+                    <button  class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function viewImage(event){
+        document.getElementById('imageView').src=URL.createObjectURL(event.target.files[0])
+    }
+</script>

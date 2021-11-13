@@ -1,0 +1,37 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>nuhman</title>
+
+  <!-- google fonts -->  
+  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="/stylesheets/style-starter.css">
+   <link rel="" href="//js/script.js">
+</head>
+
+<body>
+<!-- header -->
+ {{#if admin}}
+  {{>admin-header}}
+  {{/if}}
+  {{#if User}}
+  {{>user-header}}
+  {{/if}}
+  {{{body}}}
+<!-- //header -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+
+</html>
