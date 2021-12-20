@@ -1,14 +1,23 @@
 const imagesHelpers=require('../helpers/images-helpers')
+const adminHelpers=require('../helpers/admin-helpers')
 var express = require('express');
 var router = express.Router();
-
+const verifyLogin=(req,res,next)=>{
+  if(req.session.admin){
+    next()
+  }else{
+    res.redirect('admin/admin-login')
+  }
+}
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/',verifyLogin, function(req, res, next) {
+  let Admin=req.session.admin
+  console.log('Admin',Admin);
   imagesHelpers.getAllImages().then((images)=>{
     imagesHelpers.getAllStaticImages().then((staticImages)=>{
       imagesHelpers.getAllDainamicImages().then((dainamicImages)=>{
 
-        res.render('admin/view-product',{admin:true,images,staticImages,dainamicImages});
+        res.render('admin/view-product',{admin:true,Admin,images,staticImages,dainamicImages});
       })
       
     })
@@ -135,5 +144,29 @@ router.get('/delet-dainamic-images/:id',function(req,res){
     res.redirect('/admin')
   })
 })
+router.get('/admin-signup',(req,res)=>{
+  res.render("admin/admin-signup")
+})
+router.post('/admin-signup',(req,res)=>{
+  adminHelpers.doSignup(req.body).then((response)=>{
+    console.log(response)
+  })
+})
 
+
+router.get('/admin-login',function(req,res){
+  res.render('admin/admin-login')
+})
+router.post('/admin-login',(req,res)=>{
+  adminHelpers.doLogin(req.body).then((response)=>{
+    if(response.status){
+      req.session.loggedIn=true
+      req.session.admin=response.admin
+      res.redirect('/admin')
+    }else{
+      // req.session.logginErr=true
+      res.redirect('/admin/admin-login')
+    }
+  })
+})
 module.exports = router;

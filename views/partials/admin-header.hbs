@@ -21,12 +21,24 @@
                   <li class="nav-item active">
                       <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item @@about__active">
-                      <a class="nav-link" href="user/about">items</a>
-                  </li>
-                  <li class="nav-item @@contact__active">
-                      <a class="nav-link" href="user/contact">Contact</a>
-                  </li>
+                  {{!-- <li class="nav-item @@about__active">
+                      <a class="nav-link" href="admin/admin-login">Login</a>
+                  </li> --}}
+
+                  {{!-- <li class="nav-item @@contact__active">
+                      <a class="nav-link" href="admin/admin-signup">Signup</a>
+                  </li> --}}
+             <div class="dropdown">
+                 
+                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 {{#if Admin}}
+                  {{Admin.Email}}
+                  {{else}}
+                  Account
+                  {{/if}}
+                  
+                 </button>
+             </div>
               </ul>
           </div>
           <!-- toggle switch for light and dark theme -->

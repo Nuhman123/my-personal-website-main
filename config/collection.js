@@ -1,5 +1,6 @@
 module.exports={
     IMAGES_COLLECTION:'images',
     STAIC_IMG_COLLECTION:'staticImg',
-    DAINAMIC_IMG_COLLECTION:'dainamicImg'
+    DAINAMIC_IMG_COLLECTION:'dainamicImg',
+    ADMIN_COLLECTION:'admin'
 }
