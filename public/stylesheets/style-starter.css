@@ -3462,6 +3462,10 @@ input[type="button"].btn-block {
 
 .card-group > .card {
   margin-bottom: 15px; }
+  .soft-logos img{
+    width: 60px;
+    height:auto;
+  }
 
 @media (min-width: 576px) {
   .card-group {
@@ -10265,7 +10269,6 @@ span.cursor {
     max-width: 400px; }
   .w3l-banner h1.title {
     font-size: 35px; } }
-
 @media only screen and (max-width: 415px) {
   .w3l-banner h1.title {
     font-size: 32px;
@@ -10615,7 +10618,11 @@ span.cursor {
 @media (max-width: 667px) {
   .w3l-index5 .middle-section h2 {
     font-size: 32px;
-    line-height: 42px; } }
+    line-height: 42px; }
+    .soft-logos img{
+      width: 60px;
+      height:auto;
+    } }
 
 .w3l-aboutblock1 ul.social li {
   display: inline-block;
@@ -11782,6 +11789,10 @@ color: white;
   height: 300px; 
 }
 @media (max-width: 400px) {
+  .soft-logos img{
+    width: 40px;
+    height:auto;
+  }
   .worksImg{
     width: 300px;
     height: 250px; 
