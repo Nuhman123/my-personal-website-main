@@ -23,6 +23,11 @@ router.get('/',verifyLogin, function(req, res, next) {
     })
     
   })
+  if(verifyLogin){
+    console.log('login page opend')
+  }else{
+    console.log('login page closed');
+  }
   
 });
 
