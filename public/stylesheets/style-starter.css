@@ -11790,7 +11790,7 @@ color: white;
 }
 @media (max-width: 400px) {
   .soft-logos img{
-    width: 40px;
+    width: 35px;
     height:auto;
   }
   .worksImg{
@@ -12116,4 +12116,19 @@ color: white;
   .navbar .navbar-brand{
     font-size: 25px;
   }
+}
+@media (max-width:380px){
+  .soft-logos img{
+    width: 30px;
+    height:auto;
+  }
+  /* .tabs .tab-header > div{
+    font-size: 11px;
+  }
+  .tabs .tab-header > div.active{
+    font-weight: 500;
+  }
+  .navbar .navbar-brand{
+    font-size: 25px;
+  } */
 }
