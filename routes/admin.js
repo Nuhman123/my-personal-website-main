@@ -10,7 +10,7 @@ const verifyLogin=(req,res,next)=>{
   }
 }
 /* GET home page. */
-router.get('/',function(req, res, next) {
+router.get('/',verifyLogin,function(req, res, next) {
   let Admin=req.session.admin
   console.log('Admin',Admin);
   imagesHelpers.getAllImages().then((images)=>{
