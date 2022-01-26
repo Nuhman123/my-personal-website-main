@@ -3105,15 +3105,24 @@ input[type="button"].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between; }
+  .webmax-logo{
+    width: 9rem;
+    height: auto;
+  }
 
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap; }
+  /* .company-name {
+    font-size: 16px;
+    margin-left: 2.3rem;
+    color: rgb(111, 9, 206);
+  } */
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
@@ -12048,13 +12057,13 @@ color: white;
   margin-top: 4rem;
 }
 .table1{
-  background-color: rgb(116, 174, 0);
+  background-color:darkorchid;
 }
 .table2{
-  background-color: maroon;
+  background-color:darkorchid;
 }
 .table3{
-  background-color: #1d2124;
+  background-color:darkorchid;
 }
 
 .table tr{
@@ -12062,7 +12071,7 @@ color: white;
 }
 .table-foot{
   padding: 2rem;
-  background-color: dimgrey;
+  background-color:darkred;
   border-radius: 15px;
 }
 .table-foot p{
@@ -12076,6 +12085,10 @@ color: white;
 
 /* \\addpproduct */
 @media (max-width:585px){
+  .webmax-logo{
+    width: 8rem;
+    height: auto;
+  }
   .tabs .tab-header > div{
     font-size: 16px;
   }
@@ -12085,6 +12098,10 @@ color: white;
 }
 
 @media (max-width:504px){
+  .webmax-logo{
+    width: 7rem;
+    height: auto;
+  }
   .tabs .tab-header > div{
     font-size: 14px;
   }
@@ -12107,6 +12124,10 @@ color: white;
   }
 }
 @media (max-width:400px){
+  .webmax-logo{
+    width: 6rem;
+    height: auto;
+  }
   .tabs .tab-header > div{
     font-size: 11px;
   }
@@ -12118,6 +12139,10 @@ color: white;
   }
 }
 @media (max-width:380px){
+  .webmax-logo{
+    width: 5rem;
+    height: auto;
+  }
   .soft-logos img{
     width: 30px;
     height:auto;
