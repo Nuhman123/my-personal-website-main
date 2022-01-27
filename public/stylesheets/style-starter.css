@@ -12054,25 +12054,27 @@ color: white;
   margin-top: 90px;
 }
 .plans{
+  background-color:rgb(82, 0, 118);;
   margin-top: 4rem;
 }
-.table1{
-  background-color:darkorchid;
+/* .table1{
+  background-color:rgb(82, 0, 118);;
 }
 .table2{
-  background-color:darkorchid;
+  background-color:rgb(82, 0, 118);;
 }
 .table3{
-  background-color:darkorchid;
-}
+  background-color:rgb(82, 0, 118);;
+} */
 
 .table tr{
   color: white;
 }
 .table-foot{
+  margin-top: 1rem;
   padding: 2rem;
   background-color:darkred;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .table-foot p{
   font-size: 13px;
