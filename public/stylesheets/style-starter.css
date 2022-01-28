@@ -12084,6 +12084,14 @@ color: white;
   color: white;
   font-weight: 600;
 }
+.whatsapp-float{
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+}
+.whatsapp-float-btn{
+  width: 3rem;
+}
 
 /* \\addpproduct */
 @media (max-width:585px){
